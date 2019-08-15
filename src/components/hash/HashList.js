@@ -42,6 +42,7 @@ const HashList = () => {
                     <IconText type="star-o" text="156" key="list-vertical-star-o" />,
                     <IconText type="like-o" text="156" key="list-vertical-like-o" />,
                     <IconText type="message" text="2" key="list-vertical-message" />,
+                    <IconText type="share-alt" text="50" key="list-vertical-share-alt" />,
                     <IconText type="download" text="Save" key="list-vertical-download" />,
                 ]}
             >
@@ -51,7 +52,7 @@ const HashList = () => {
                     <Icon type="thunderbolt" theme="filled" style={{ color: '#ffe200' }} />50
                 </div>
                 <div align="right">
-                    <Button shape="circle" icon="search" />
+                    <Button icon="number" type="primary"> <b>jam</b> </Button>
                 </div>
                 <center>
                     <img

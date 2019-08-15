@@ -29,7 +29,7 @@ const Page = ({ children }) => {
                     <Menu.Item key="99"></Menu.Item>
                     <Menu.Item key="2">New</Menu.Item>
                     <Menu.Item key="99"></Menu.Item>
-                    <Menu.Item key="3">Post</Menu.Item>
+                    <Menu.Item key="3">#jam</Menu.Item>
                 </Menu>
             </center>
         </Header>
