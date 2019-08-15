@@ -131,13 +131,13 @@ function getRandom() {
 }
 
 function ImageAbsolute({ x, y }) {
-	const size = rnd(100, 100);
+	const size = rnd(10, 150);
 	const img = face[rnd(0, 1)]
-
+	const step = rnd(0, 4)
 	return <div style={{
 		position: 'absolute',
 		left: `${x}00px`,
-		top: `${y}00px`,
+		top: `${y}${step}0px`,
 	}}>
 		<div>#facebook</div>
 		<img src={img} width={size} height={size} />
