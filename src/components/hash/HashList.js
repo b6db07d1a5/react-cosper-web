@@ -46,7 +46,7 @@ const HashList = () => {
                     <IconText type="download" text="Save" key="list-vertical-download" />,
                 ]}
             >
-                <div style={{ marginBottom: 20, fontSize: 13 }}>
+                <div style={{ fontSize: 13 }}>
                     <b>#TheUntamed</b> - Posted by : sabparod 12 hours ago.{" "}
                     <Icon type="fire" theme="filled" style={{ color: '#e69325' }} />17{" "}
                     <Icon type="thunderbolt" theme="filled" style={{ color: '#ffe200' }} />50
@@ -56,8 +56,8 @@ const HashList = () => {
                 </div>
                 <center>
                     <img
-                        width={272}
-                        src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                        width={400}
+                        src="https://i.ibb.co/3h5MvDn/S-696323.jpg"
                     />
                 </center> <br />
                 <p style={{ fontSize: 15, fontWeight: 'bold' }}> {item.content} </p>
