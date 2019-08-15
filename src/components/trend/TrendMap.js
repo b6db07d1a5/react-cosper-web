@@ -144,16 +144,8 @@ function ImageAbsolute({ x, y }) {
 	</div>
 }
 
-function rand(max, min) {
-	return Math.floor(Math.random() * (max - min) + max)
-}
-
 function rnd(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function randy() {
-	return Math.floor(Math.random() * (6 - 1) + 6)
 }
 
 export default TrendMap;
