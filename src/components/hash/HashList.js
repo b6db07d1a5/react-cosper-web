@@ -48,8 +48,7 @@ const HashList = () => {
             >
                 <div style={{ fontSize: 13 }}>
                     <b>#TheUntamed</b> - Posted by : sabparod 12 hours ago.{" "}
-                    <Icon type="fire" theme="filled" style={{ color: '#e69325' }} />17{" "}
-                    <Icon type="thunderbolt" theme="filled" style={{ color: '#ffe200' }} />50
+                    <Icon type="sketch" style={{ color: '#e69325' }} />VII
                 </div>
                 <div align="right">
                     <Button icon="number" type="primary"> <b>jam</b> </Button>
