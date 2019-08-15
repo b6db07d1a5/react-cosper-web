@@ -5,7 +5,9 @@ import TrendMap from '@components/trend/TrendMap'
 
 class Index extends Component {
     render() {
-        return <Page><TrendMap></TrendMap></Page>;
+        return <Page>
+            <TrendMap />
+        </Page>;
     }
 }
 
