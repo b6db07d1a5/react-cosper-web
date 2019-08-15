@@ -1,8 +1,18 @@
 import React from 'react'
 
-import { Layout, Menu } from 'antd';
+import styled from 'styled-components';
 
-const { Header, Content } = Layout;
+import { Layout, Menu, List } from 'antd';
+
+const { Header, Content, Sider } = Layout;
+
+const data = [
+    '#Racing car.',
+    '#Japanese.',
+    '#100km after.',
+    '#Man charged.',
+    '#Los Angeles.',
+];
 
 const Page = ({ children }) => {
     return (<Layout className="layout" style={{ height: '100vh' }}>
@@ -23,12 +33,29 @@ const Page = ({ children }) => {
                 </Menu>
             </center>
         </Header>
-        <Content style={{ padding: '0 50px', borderTop: '1px solid #ddd' }}>
-            <div style={{ background: '#fff', padding: 24, minHeight: '100%' }}>
-                {children}
-            </div>
-        </Content>
+        <Layout style={{ padding: '0 250px', borderTop: '1px solid #ddd' }}>
+            <Content style={{ padding: '0 20px' }}>
+                <div style={{ background: '#fff', padding: 24 }}>
+                    {children}
+                </div>
+            </Content>
+            <Sider style={{ marginTop: '20px', backgroundColor: '#f0f2f5' }}>
+                <h3>Hash Trends</h3>
+                <StyledList
+                    size="small"
+                    bordered
+                    dataSource={data}
+                    renderItem={item => <List.Item>{item}</List.Item>}
+                />
+            </Sider>
+        </Layout>
     </Layout>);
 }
+
+const StyledList = styled(List)`
+    .ant-list-header {
+        background-color: #FFF;
+    }
+`
 
 export default Page;
