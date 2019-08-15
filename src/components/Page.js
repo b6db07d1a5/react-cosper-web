@@ -43,6 +43,7 @@ const Page = ({ children }) => {
                 <h3>Hash Trends</h3>
                 <StyledList
                     size="small"
+                    footer={<div>Footer</div>}
                     bordered
                     dataSource={data}
                     renderItem={item => <List.Item>{item}</List.Item>}
@@ -53,9 +54,7 @@ const Page = ({ children }) => {
 }
 
 const StyledList = styled(List)`
-    .ant-list-header {
-        background-color: #FFF;
-    }
+
 `
 
 export default Page;

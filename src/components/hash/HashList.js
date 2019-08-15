@@ -1,4 +1,7 @@
 import React from 'react'
+
+import styled from 'styled-components';
+
 import { List, Avatar, Icon } from 'antd';
 
 const listData = [];
@@ -8,9 +11,9 @@ for (let i = 0; i < 23; i++) {
         title: `ant design part ${i}`,
         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
         description:
-            'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+            'Ant Design, a design language for background applications, .',
         content:
-            'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+            'We supply a series of design principles, practical patterns and high quality design.',
     });
 }
 
@@ -22,7 +25,7 @@ const IconText = ({ type, text }) => (
 );
 
 const HashList = () => {
-    return (<List
+    return (<StyledList
         itemLayout="vertical"
         size="large"
         bordered
@@ -39,20 +42,39 @@ const HashList = () => {
                     <IconText type="star-o" text="156" key="list-vertical-star-o" />,
                     <IconText type="like-o" text="156" key="list-vertical-like-o" />,
                     <IconText type="message" text="2" key="list-vertical-message" />,
+                    <IconText type="download" text="Save" key="list-vertical-download" />,
                 ]}
             >
+                <div style={{ marginBottom: 20, fontSize: 13 }}>
+                    <b>#TheUntamed</b> - Posted by : sabparod 12 hours ago.{" "}
+                    <Icon type="fire" theme="filled" style={{ color: '#e69325' }} />17{" "}
+                    <Icon type="thunderbolt" theme="filled" style={{ color: '#ffe200' }} />50
+                </div>
 
                 <center>
                     <img
                         width={272}
                         src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
                     />
-                </center> < br />
-                {item.content}
-
+                </center> <br />
+                <p style={{ fontSize: 15, fontWeight: 'bold' }}> {item.content} </p>
             </List.Item >
         )}
     />);
 }
+
+const StyledList = styled(List)`
+    .ant-list-item {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .ant-list-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .ant-list-item-action {
+        margin-top: 30px;
+    }
+`
 
 export default HashList;
