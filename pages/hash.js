@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Page from '@components/Page'
-import HashPost from '@components/hash/HashPost'
+import HashJam from '@components/hash/HashJam'
 import HashList from '@components/hash/HashList'
 
 class Hash extends Component {
@@ -8,7 +8,7 @@ class Hash extends Component {
 
     render() {
         return (<Page>
-            {/* <HashPost /> */}
+            <HashJam />
             <HashList />
         </Page>);
     }
