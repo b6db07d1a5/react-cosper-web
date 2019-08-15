@@ -18,11 +18,11 @@ const Page = ({ children }) => {
                     style={{ lineHeight: '64px' }}
                 >
                     <Menu.Item key="1">Trends</Menu.Item>
-                    <Menu.Item key="99"></Menu.Item>
+                    <Menu.Item key="991"></Menu.Item>
                     <Menu.Item key="2">Hot</Menu.Item>
-                    <Menu.Item key="99"></Menu.Item>
+                    <Menu.Item key="992"></Menu.Item>
                     <Menu.Item key="3">New</Menu.Item>
-                    <Menu.Item key="99"></Menu.Item>
+                    <Menu.Item key="993"></Menu.Item>
                     <Menu.Item key="4">#jam</Menu.Item>
                 </Menu>
             </center>
