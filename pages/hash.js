@@ -8,7 +8,7 @@ class Hash extends Component {
 
     render() {
         return (<Page>
-            <HashPost />
+            {/* <HashPost /> */}
             <HashList />
         </Page>);
     }

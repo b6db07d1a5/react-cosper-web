@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components';
 
-import { List, Avatar, Icon } from 'antd';
+import { List, Avatar, Icon, Button } from 'antd';
 
 const listData = [];
 for (let i = 0; i < 23; i++) {
@@ -50,7 +50,9 @@ const HashList = () => {
                     <Icon type="fire" theme="filled" style={{ color: '#e69325' }} />17{" "}
                     <Icon type="thunderbolt" theme="filled" style={{ color: '#ffe200' }} />50
                 </div>
-
+                <div align="right">
+                    <Button shape="circle" icon="search" />
+                </div>
                 <center>
                     <img
                         width={272}
