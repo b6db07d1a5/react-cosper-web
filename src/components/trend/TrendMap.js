@@ -14,15 +14,16 @@ class TrendMap extends Component {
         return (
             <center>
                 <Content style={{ borderTop: '1px solid #ddd' }}>
-                    <div style={{
+                    <img src='static/trend/map/thai_yellow.png' />
+                    {/* <div style={{
                         textAlign: 'center',
                         position: 'relative',
-                        backgroundColor: '#fcba03',
+                        backgroundColor: '#fff',
                         padding: 24,
                         width: 960,
                         height: '100vh'
                     }}>
-                        {
+                        {/* {
                             data.map(function (d) {
                                 const locate = {
                                     x: rnd(0, 9),
@@ -30,10 +31,10 @@ class TrendMap extends Component {
                                 }
                                 return <ImageAbsolute {...locate} />
                             })
-                        }
-                    </div>
+                        } 
+                    </div> */}
                 </Content >
-            </center>
+            </center >
         );
     }
 }

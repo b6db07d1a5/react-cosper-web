@@ -7,7 +7,7 @@ import { Layout, Menu, List } from 'antd';
 const { Header, Content, Sider } = Layout;
 
 const Page = ({ children }) => {
-    return (<Layout className="layout" style={{ height: '100vh' }}>
+    return (<Layout className="layout">
         <Header style={{ backgroundColor: 'white' }} >
             <div className="logo" />
             <center>
