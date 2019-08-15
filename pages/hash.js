@@ -6,7 +6,6 @@ import HashList from '@components/hash/HashList'
 
 const { Header, Content, Sider } = Layout;
 
-
 const data = [
     '#Racing car.',
     '#Japanese.',

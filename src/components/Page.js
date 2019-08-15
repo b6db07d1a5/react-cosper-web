@@ -14,14 +14,16 @@ const Page = ({ children }) => {
                 <Menu
                     theme="white"
                     mode="horizontal"
-                    defaultSelectedKeys={['2']}
+                    defaultSelectedKeys={['1']}
                     style={{ lineHeight: '64px' }}
                 >
                     <Menu.Item key="1">Trends</Menu.Item>
                     <Menu.Item key="99"></Menu.Item>
-                    <Menu.Item key="2">New</Menu.Item>
+                    <Menu.Item key="2">Hot</Menu.Item>
                     <Menu.Item key="99"></Menu.Item>
-                    <Menu.Item key="3">#jam</Menu.Item>
+                    <Menu.Item key="3">New</Menu.Item>
+                    <Menu.Item key="99"></Menu.Item>
+                    <Menu.Item key="4">#jam</Menu.Item>
                 </Menu>
             </center>
         </Header>
