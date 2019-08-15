@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 const Page = ({ children }) => {
     return (<Layout className="layout" style={{ height: '100vh' }}>

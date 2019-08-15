@@ -9,6 +9,14 @@
 				"libraryName": "antd",
 				"style": "css"
 			}
+		],
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"@components": "./src/components"
+				}
+			}
 		]
 	]
 }
